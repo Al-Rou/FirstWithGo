@@ -13,7 +13,7 @@ func main() {
 	for i := 0; i < len(input)/2; i++ {
 		//If one character is not the same as its symmetric associated one, the program stops and
 		//outputs an appropriate message
-		if input[i] != input[len(input)-1-i] {
+		if (input[i] != input[len(input)-1-i]) && (input[i] != input[len(input)-1-i]-32) && (input[i]-32 != input[len(input)-1-i]) {
 			fmt.Print("The entered word is NOT palindrome!")
 			return
 		}
